@@ -1,7 +1,7 @@
 ﻿using System;
 
 // Programa que suma dos numeros
-/*int a = 0;
+int a = 0;
 int b = 0;
 
 Console.WriteLine("Ingrese el primer numero");
@@ -9,7 +9,7 @@ a = int.Parse(Console.ReadLine());
 Console.WriteLine("Ingrese el segundo numero");
 b = int.Parse(Console.ReadLine());
 
-Console.WriteLine("La suma de los numero es " + (a + b));*/
+Console.WriteLine("La suma de los numero es " + (a + b));
 
 // int, double, float, bool, string, char
 
@@ -101,3 +101,17 @@ if (j != k || j > k)
 
 // && y
 // || O
+
+// Ciclo es para repetir una rutina n cantidad de veces
+
+int veces = 0;
+
+Console.WriteLine("Cuantas veces quiere imprimir Hola Mundo en pantalla");
+veces = int.Parse(Console.ReadLine());
+
+for (int i = 0; i < veces; i++) {
+
+
+    Console.WriteLine("Hola Mundo");
+
+}
