@@ -71,3 +71,33 @@ string s12 = "Mundo";
 string s13 = s11 + s12; // Concatenacion de String
 
 Console.WriteLine(s13);
+
+
+int j = 8;
+int k = 9;
+bool p = j > k;
+p = j == k;
+p = j != k;
+
+if (j > k) {
+    Console.WriteLine("J es Mayor a K");
+}
+
+if (j  == k)
+{
+    Console.WriteLine("J igual K");
+}
+
+if (j != k  &&  j > k )
+{
+    Console.WriteLine("J es diferente de K 1");
+}
+
+
+if (j != k || j > k)
+{
+    Console.WriteLine("J es diferente de K 2");
+}
+
+// && y
+// || O
