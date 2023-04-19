@@ -1,7 +1,7 @@
 ﻿using System;
 
 // Programa que suma dos numeros
-int a = 0;
+/*int a = 0;
 int b = 0;
 
 Console.WriteLine("Ingrese el primer numero");
@@ -9,7 +9,7 @@ a = int.Parse(Console.ReadLine());
 Console.WriteLine("Ingrese el segundo numero");
 b = int.Parse(Console.ReadLine());
 
-Console.WriteLine("La suma de los numero es " + (a + b));
+Console.WriteLine("La suma de los numero es " + (a + b));*/
 
 // int, double, float, bool, string, char
 
@@ -25,3 +25,49 @@ string cad1 = "20";
 int conversion = int.Parse(cad1);
 
 Console.WriteLine (conversion + 5);
+
+//  + - * /
+// +=
+
+int h = 10;
+h += 10;
+
+Console.WriteLine( "Opeador += " +  h);
+
+// -=
+
+h -= 5;
+
+
+Console.WriteLine("Opeador -= " + h);
+
+// *=
+
+h *= 2;
+
+Console.WriteLine("Opeador *= " + h);
+
+// /=
+
+h /= 3;
+
+Console.WriteLine("Opeador /= " + h);
+
+
+if (b1 == true)
+{
+
+    Console.WriteLine("b1 contiene un valor verdadero");
+}
+
+if (b1 != true)
+{
+
+    Console.WriteLine("b1 contiene un valor falso");
+}
+
+string s11 = "Hola";
+string s12 = "Mundo";
+string s13 = s11 + s12; // Concatenacion de String
+
+Console.WriteLine(s13);
