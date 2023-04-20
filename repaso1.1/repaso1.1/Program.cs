@@ -1,5 +1,7 @@
 ﻿using System;
 
+
+
 // Programa que suma dos numeros
 int a = 0;
 int b = 0;
@@ -114,4 +116,198 @@ for (int i = 0; i < veces; i++) {
 
     Console.WriteLine("Hola Mundo");
 
+}
+
+
+
+// Escriba un programa que reciba un numero del 1 al 7 y basado en el numero escrito
+// va a retornar el nombre que representa según los dias de las semana
+// 1 - Lunes
+// 2 - Martes
+// 3 - Miercoles
+
+int dia = 0;
+Console.WriteLine("Escriba el Numero del dia de la semana");
+dia = int.Parse(Console.ReadLine());
+
+
+if (dia == 1 )
+{
+    Console.WriteLine("Lunes");
+}else
+{
+
+    if (dia == 2)
+    {
+        Console.WriteLine("Martes");
+    }else
+    {
+        if (dia == 3)
+        {
+            Console.WriteLine("Miercoles");
+        }else
+        {
+            if (dia == 4)
+            {
+                Console.WriteLine("Jueves");
+            }else
+            {
+                if (dia == 5)
+                {
+
+                    Console.WriteLine("Viernes");
+                    
+                }else
+                {
+                    if (dia== 6)
+                    {
+                        Console.WriteLine("Sabado");
+                    }
+                    else
+                    {
+                        if(dia == 7)
+                        {
+                            Console.WriteLine("Domingo");
+                        }
+                        else
+                        {
+
+                            Console.WriteLine("Escriba un numero entre el 1 al 7");
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+switch (dia) {
+
+    case 1:
+        Console.WriteLine("Lunes");
+        break;
+    case 2:
+        Console.WriteLine("Martes");
+        break;
+    case 3:
+        Console.WriteLine("Miercoles");
+        break;
+    case 4:
+        Console.WriteLine("Jueves");
+        break;
+    case 5:
+        Console.WriteLine("Viernes");
+        break;
+    case 6:
+        Console.WriteLine("Sabado");
+        break;
+    case 7:
+        Console.WriteLine("Domingo");
+        break;
+    default:
+        Console.WriteLine("Escriba un numero entre el 1 al 7");
+        break;
+
+}
+
+
+char genero = 'K'; // 'F', 'M';
+
+switch (genero)
+{
+    case 'F':
+        Console.WriteLine("Femenimo");
+        break;
+    case 'M':
+        Console.WriteLine("Masculino");
+        break;
+
+    default:
+        Console.WriteLine("Genero no aplica");
+        break;
+}
+
+// Las leyes en Honduras nos dicen que cuando una persona de Genero Femenimo tiene 60 años
+// ya tiene derecho a jubilarse
+// pero si es de genero Masculino debe tener 65 años.
+
+int edad;
+Console.WriteLine("Ingrese su Edad");
+edad = int.Parse(Console.ReadLine());
+
+char g = '0';
+Console.WriteLine("Ingrese su Genero (F/M)");
+g = char.Parse(Console.ReadLine());
+
+bool tieneDerechoJubilacion = false;
+
+switch (g) {
+
+    case 'M':
+        if (edad >= 65) {
+            tieneDerechoJubilacion = true;
+        }
+        break;
+    case 'F':
+        if (edad >= 60) {
+            tieneDerechoJubilacion = true;
+        }
+        break;
+    default:
+        Console.WriteLine("Genero no valiudo para Calculo de Jubilacion");
+        break;
+    
+}
+
+Console.WriteLine("La Persiona tiene derecho a Jubilacion " + tieneDerechoJubilacion);
+
+
+bool seguirPeleando = true;
+
+do
+{
+
+    Console.WriteLine("Quieres Irte de mi Mundo (Y/N)");
+    char vl = char.Parse(Console.ReadLine());
+
+    if (vl == 'Y')
+    {
+
+        seguirPeleando = false;
+
+    }
+    else {
+        Console.WriteLine("Ok, seguiras en mi prision");
+    }
+
+
+
+} while (seguirPeleando == true);
+
+Console.WriteLine("Te he liberado de mi prision de bucles");
+
+// Se solicita que la persona ingrese un valor menor a 10 y sino ingresa un valor a 10
+// no debe dejarlo continuar en el programa.
+
+int valorIngresar = 11;
+// Las variables que me rompen un ciclo, se les llama variables banderas
+// si usted en medio del ciclo no modifica la variable bandera
+// su ciclo sera infinito.
+
+
+// Yo ejecuto el bucle al menos una vez
+do
+{
+
+    Console.WriteLine("Ingrese un valor menor 10");
+    valorIngresar = int.Parse(Console.ReadLine());
+
+} while (valorIngresar >= 10);
+
+// Ciclo While Voy a entrar al bucle si cumple la condicion. 
+
+while (valorIngresar >= 10) {
+    Console.WriteLine("Ingrese un valor menor 10");
+    valorIngresar = int.Parse(Console.ReadLine());
 }
